@@ -4,6 +4,10 @@
   letter-spacing: 3px;
 }
 
+body {
+  background-color: #eae9e9;
+}
+
 main {
   text-align: center;
   margin: 0 auto;
@@ -12,6 +16,7 @@ main {
 .page-title {
   font-size: 4em;
   text-transform: uppercase;
+  color: #191716;
 }
 
 
@@ -21,18 +26,19 @@ form {
 }
 
 input {
-  width: 85%;
+  width: 65%;
+  background-color: #eae9e9;
 }
 
 .search-bar {
   padding: 15px 30px;
   border-radius: 5px;
   border-style: solid;
-  border-color: lightgrey;
+  border-color: #575655;
 }
 
 ::placeholder {
-  color: grey;
+  color: #575655;
   text-transform: uppercase;
 }
 
@@ -59,5 +65,32 @@ ul {
 li {
   flex-grow: 1;
   flex-basis: 50%;
-  padding: 15px;
+  padding: 25px;
+}
+
+[src^="thumbs"] {
+  border-radius: 5px;
+
+}
+
+
+
+
+/* Media Query */
+
+@media (min-width: 940px) {
+
+.row-one, .row-two, .row-three {
+  flex-wrap: nowrap;
+}
+
+li {
+  flex-basis: auto;
+}
+
+[src^="thumbs"]:hover {
+  box-shadow: 7px 7px 20px -10px #575655;
+  transform: rotateY(5deg);
+}
+
 }
