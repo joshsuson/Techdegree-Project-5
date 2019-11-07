@@ -6,14 +6,14 @@ $(document).ready(function() {
 
 //Search function
 
-$("#search-bar").keypress(function() {
+$("#search-bar").keyup(function() {
   let currentQuery = $("#search-bar").val().toLowerCase();
-  $(".gallery a").filter(function() {
-    let currentKeyword = $(this).attr("data-alt").toLowerCase();
+  $(".gallery img").filter(function() {
+    let currentKeyword = $(this).attr("alt").toLowerCase();
     if (currentKeyword.indexOf(currentQuery) >= 0) {
-      $(this).show();
+      $(this).parent().show();
     } else {
-      $(this).hide()
+      $(this).parent().hide()
     }
   });
 });
