@@ -21,16 +21,15 @@ main {
 
 
 /* Input Styles */
-form {
+
+
+input {
+  width: 45%;
+  background-color: #eae9e9;
   margin-bottom: 50px;
 }
 
-input {
-  width: 65%;
-  background-color: #eae9e9;
-}
-
-.search-bar {
+#search-bar {
   padding: 15px 30px;
   border-radius: 5px;
   border-style: solid;
@@ -60,7 +59,7 @@ ul {
   justify-content: center;
   align-items: baseline;
   flex-wrap: wrap;
-  max-width: 1100px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -74,9 +73,6 @@ ul {
   border-radius: 5px;
 
 }
-
-
-
 
 /* Media Query */
 
