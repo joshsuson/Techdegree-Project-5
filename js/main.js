@@ -15,5 +15,6 @@ $("#search-bar").keypress(function() {
     } else {
       $(this).hide();
     }
+
   });
 });
